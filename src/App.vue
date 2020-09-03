@@ -2,16 +2,18 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WeChat/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import WeChat from './components/WeChat.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    WeChat
   }
 }
 </script>
