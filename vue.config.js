@@ -29,13 +29,17 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
+    // 配置Host 地址在
+    // # Local
+    // 本机IP4 地址  需要映射的域名 
+    // 178.16.1.198  landrover.app.jaguarlandrover.cn
+    host:'landrover.app.jaguarlandrover.cn',
     port: 80,
     open: true,
     overlay: {
       warnings: false,
       errors: true
     },
-    disableHostCheck: true,
     proxy: {
       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy
